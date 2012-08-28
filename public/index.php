@@ -1,5 +1,7 @@
 <?php
 
+ini_set('date.timezone', 'America/New_York');
+
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
