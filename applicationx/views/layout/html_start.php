@@ -4,7 +4,7 @@
 <link href="<?=CSS?>reset.css" rel="stylesheet" type="text/css" />
 <link href="<?=CSS?>style.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="<?=JS?>jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="<?=JS?>jquery-1.8.0.min.js"></script>
 
 <title><?=$template['title']?></title>
 
