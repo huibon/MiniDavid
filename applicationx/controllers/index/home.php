@@ -7,7 +7,7 @@ class Home extends CI_Controller {
       show_404();
     }
     $data['title'] = 'Home'; // Capitalize the first letter
-		
+	$this->_load_css(CSS."style.css");
     $this->load->view('templates/header', $data);
     $this->load->view('index/home', $data);
     $this->load->view('templates/footer', $data);
