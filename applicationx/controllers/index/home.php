@@ -1,6 +1,6 @@
 <?php
 
-class Home extends CI_Controller {
+class Home extends Koolyte_Controller {
 
   public function index(){
     if ( ! file_exists('../applicationx/views/index/home.php')){
