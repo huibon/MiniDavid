@@ -9,7 +9,7 @@ class Koolyte_Controller extends CI_Controller {
 	
 	public function __construct () {
 		parent::__construct();
-		$this->load->database();		//load mysql database
+		//$this->load->database();		//load mysql database
 		$this->data['template']['css'] = array(); //CSS files
 		$this->data['template']['libraries'] = array(); //Js libraries file
 		$this->data['template']['title'] = "Koolyte - ";	 // Universal title	
