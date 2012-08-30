@@ -4,16 +4,16 @@
 <link href="<?=CSS?>reset.css" rel="stylesheet" type="text/css" />
 <link href="<?=CSS?>style.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="<?=LIB?>jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="<?=JS?>jquery-1.7.1.min.js"></script>
 
 <title><?=$template['title']?></title>
 
 <?php
 if (is_array($template['libraries'])) {
 	foreach ($template['libraries'] as $library) {
-		echo ($library['css']?'<link href="'.LIB.$library['css'].'" rel="stylesheet" type="text/css" />':'');
-		echo ($library['lib']?'<script type="text/javascript" src="'.LIB.$library['lib'].'"></script>':'');
-		echo ($library['js']?'<script type="text/javascript" src="'.LIB.$library['js'].'"></script>':'');
+		echo ($library['css']?'<link href="'.CSS.$library['css'].'" rel="stylesheet" type="text/css" />':'');
+		echo ($library['lib']?'<script type="text/javascript" src="'.JS.$library['lib'].'"></script>':'');
+		echo ($library['js']?'<script type="text/javascript" src="'.JS.$library['js'].'"></script>':'');
 	}
 }
 ?>

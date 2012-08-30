@@ -22,15 +22,15 @@ class Koolyte_Controller extends CI_Controller {
 	public function _render ($views = array(), $data = NULL) {
 		if ($data == NULL) $data = $this->data;
 		if (!is_array($views)) $views = array($views);	
-		$this->load->view($prefix."layout/html_start", $data);
-		$this->load->view($prefix."layout/header", $data);
+		$this->load->view("layout/html_start", $data);
+		$this->load->view("layout/header", $data);
 		
 		foreach ($views as $view) {
-			$this->load->view($prefix.$view, $data);
+			$this->load->view($view, $data);
 		}
 		
-		$this->load->view($prefix."layout/footer", $data);
-		$this->load->view($prefix."layout/html_end", $data);
+		$this->load->view("layout/footer", $data);
+		$this->load->view("layout/html_end", $data);
 	}
 	
 	/***

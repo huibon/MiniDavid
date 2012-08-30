@@ -8,9 +8,9 @@ class Home extends Koolyte_Controller {
     }
     $data['title'] = 'Home'; // Capitalize the first letter
 	$this->_load_css(CSS."style.css");
-    $this->load->view('templates/header', $data);
-    $this->load->view('index/home', $data);
-    $this->load->view('templates/footer', $data);
+    //$this->load->view('templates/header', $data);
+    $this->_render("index/home");
+    //$this->load->view('templates/footer', $data);
   }
 }
 
