@@ -55,5 +55,6 @@ class Koolyte_Controller extends CI_Controller {
 			$this->data['template']['libraries'][] = $this->lib->get($l);
 		}
 	}
+	
 }
 
