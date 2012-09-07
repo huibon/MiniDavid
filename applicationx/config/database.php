@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'root';
-$db['default']['database'] = 'local.db';
+$db['default']['hostname'] = '174.121.16.8';
+$db['default']['username'] = 'fz2kx_user';
+$db['default']['password'] = 'k1982112k';
+$db['default']['database'] = 'fz2kx_koolyte';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
