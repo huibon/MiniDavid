@@ -12,6 +12,9 @@ class Koolyte_Controller extends CI_Controller {
 		//$this->load->database();		//load mysql database
 		$this->data['template']['css'] = array(); //CSS files
 		$this->data['template']['libraries'] = array(); //Js libraries file
+		$this->load->helper("form");
+	    $this->load->library("form_validation");
+		$this->load->library('session');
 		$this->data['template']['title'] = "Koolyte - ";	 // Universal title	
 	}
 	
