@@ -45,6 +45,7 @@ $route['404_override'] = '';
 include("routes/route_resto.php");
 include("routes/route_auto.php");
 include("routes/route_reales.php");
+include("routes/route_user.php");
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

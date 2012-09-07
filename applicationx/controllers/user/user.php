@@ -1,7 +1,13 @@
 <?
 class User extends Koolyte_Controller {
+	
+	public function __construct () {
+		parent::__construct();
+		$this->load->model("user/account");
+	}
+	
 	function login(){
-		$this->load->model("account");
+		
 		$this->form_validation->set_error_delimiters('<span class="error">', '</span>');
 		$this->_username = $this->input->post('username');                                //用户名
 		if ($this->form_validation->run() == FALSE) {
@@ -16,7 +22,7 @@ class User extends Koolyte_Controller {
 	}
 	
 	function username_check($username) {
-		$this->load->model("account");
+		
 		if ($this->account->get_by_username($username)) {
 			return TRUE;
 		} else {
@@ -36,16 +42,11 @@ class User extends Koolyte_Controller {
 			return FALSE;
 		}
 	}
-	
-	
-	
-	
 
 /**
 * Register
 */
 	function register() {
-		$this->load->model("account");
 		$this->form_validation->set_error_delimiters('<span class="error">', '</span>');
 		$this->form_validation->set_rules('username', 'username', 'required');
 		$this->form_validation->set_rules('password', 'password', 'required');
@@ -70,7 +71,6 @@ class User extends Koolyte_Controller {
 	
 	
 	function username_exists($username) {
-		$this->load->model("account");
 		if ($this->account->get_by_username($username)) {
 		$this->form_validation->set_message('username_exists', '用户名已被占用');
 		return FALSE;
@@ -79,7 +79,6 @@ class User extends Koolyte_Controller {
 	}
 	
 	function email_exists($email) {
-		$this->load->model("account");
 		if ($this->account->email_exists($email)) {
 			$this->form_validation->set_message('email_exists', '邮箱已被占用');
 			return FALSE;
