@@ -6,7 +6,7 @@
 
 <script type="text/javascript" src="<?=JS?>jquery-1.8.0.min.js"></script>
 
-<title><?=$template['title']?></title>
+<title><?php echo $template['title']; ?></title>
 
 <?php
 if (is_array($template['libraries'])) {
