@@ -16,6 +16,9 @@ class Koolyte_Controller extends CI_Controller {
 	    $this->load->library("form_validation");
 		$this->load->library('session');
 		$this->data['template']['title'] = "Koolyte - ";	 // Universal title	
+		
+		//get current controller
+	    $this->data['current_uri'] = $this->uri->uri_string();
 	}
 	
 	/***

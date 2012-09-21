@@ -1,14 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* General Style */
+/* -- General Style -- */
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video { margin:0px;padding:0px;border:none;font-size:12px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;color:#333; }
 a{ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;color:#333;text-decoration:none; }
 a:hover{ text-decoration:underline;color: #931818 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-html, body { line-height:1;background:#f5f5f5; }
-ol, ul { list-style: none; }
+html, body { line-height:1;background:url(../images/site/bgnoise.png); }
+ol, ul { list-style: none;padding:0px;margin:0px; }
 input{  }
 table { border-collapse:collapse;border-spacing: 0; }
 img{ border:none;}
@@ -64,20 +64,48 @@ p{ font-size:13px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;color
 .f29{ font-size:29px; }
 .fbold{ font-weight:bold; }
 
-/* Main CSS */
-.header1bg{ height:75px;min-width:960px;margin:0 auto;background:#222 }
+/* -- Main CSS -- */
+
+/* -- header -- */
+.header1_bg{ height:75px;min-width:960px;margin:0 auto;background:#222 }
 .header1{ height:35px;width:960px;padding:20px 0px;margin:0 auto; }
 .header1_logo{ width:100px;height:35px; }
-.header1_logo a{ line-height:35pc;font-size:35px;color:#fff; }
-.header2bg{ height:85px;min-width:960px;margin:0 auto;border:1px solid #ccc; }
+.header1_logo a{ line-height:35px;font-size:35px;color:#fff;text-decoration:none;font-weight:bold; }.header1_logo a:hover{ color:#FFC; }
+.header2_bg{ height:50px;min-width:960px;margin:0 auto; }
+.header2{ width:960px;height:50px;margin:0 auto;overflow:hidden; }
+.header_top_menu{ float:left;border-right:1px solid #ccc; }
+.header_top_menu_item{ float:left;height:50px;width:70px; }
+.header_top_menu_item_home{ background:url(../images/main_nav/koolyte-main-nav_home.png) no-repeat; }
+.header_top_menu_item_eat{ background:url(../images/main_nav/koolyte-main-nav_eat.png) no-repeat; }
+.header_top_menu_item_live{ background:url(../images/main_nav/koolyte-main-nav_live.png) no-repeat; }
+.header_top_menu_item_move{ background:url(../images/main_nav/koolyte-main-nav_move.png) no-repeat; }
+.header_top_menu_item_map{ background:url(../images/main_nav/koolyte-main-nav_map.png) no-repeat; }
+.header_top_menu_item:hover{ background-position:0px -50px;border-top:5px solid #f03; }
+.header_top_menu_item:active, .header_top_menu_item_active{ background-position:0px -100px;border-top:5px solid #ccc; }
 
-.header.top_menu_bg{ height:88px;min-width:960px;background:url(../images/site/new_header_bg.png) repeat-x; }
-.header_top_menu_bar{ width:960px;margin:0 auto; }
-.header_top_menu{ float:right; }
-.haader_top_menu ul{ padding:0px; }
-.header_top_menu ul li{ float:left;height:40px;padding:20px 0px; }
-.header_top_menu ul li a{ height:20px;line-height:20px;font-size:15px;padding:18px 10px 5px 35px;color:#e2e2e2;text-shadow:#790c0c 0px -1px 0px;text-decoration:none;display:block; }
-.header_top_menu ul li a:hover{ color:#fff;text-shadow:#510000 0px -1px 0px; }
+/* -- slideshow -- */
+.slideshow_bg{ min-width:960px;height:290px;margin:0 auto; }
+.slideshow{ width:960px;height:270px;margin:0 auto;background:#eee;overflow:hidden; }
 
+/* -- food -- */
+/* -- food ads -- */
+.site_top_ads_bg{ min-width:960px;height:230px;margin:0 auto; }
+.site_top_ads{ width:960px;height:180px;padding:15px 0px 35px 0px;background:#eee;margin:0 auto; }
+.site_top_ads_item{ width:228px;height:150px;background:#999;float:left;margin-left:15px;cursor:pointer;overflow:hidden; }
+.site_top_ads_item:first-child{ margin-left:0px; }
 
+/* -- shadow -- */
+.top_down_shadow { -moz-box-shadow: 0px 1px 2px #666;-webkit-box-shadow: 0px 1px 2px #666;box-shadow: 0px 1px 2px #666;
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#666666')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#666666');
+}
+.center_shadow{ -moz-box-shadow: 0px 0px 1px #666;-webkit-box-shadow: 0px 0px 1px #666;box-shadow: 0px 0px 1px #666;
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='#444444')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='#444444'); }
 
+/* round corner */
+.round_corner_3px{ -webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior:url(ie-css3.htc); }

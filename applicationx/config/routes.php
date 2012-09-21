@@ -42,7 +42,7 @@ $route['default_controller'] = 'index/home';
 //$route['(:any)'] = 'index/home/view/$1';
 $route['404_override'] = '';
 
-include("routes/route_resto.php");
+include("routes/route_food.php");
 include("routes/route_auto.php");
 include("routes/route_reales.php");
 include("routes/route_user.php");
