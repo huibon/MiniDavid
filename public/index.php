@@ -20,7 +20,12 @@ ini_set('date.timezone', 'America/New_York');
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'development');
+if($_SERVER['SERVER_NAME'] == "koolyte.local"){
+  define('ENVIRONMENT', 'development');
+}else{
+  define('ENVIRONMENT', 'production');
+}
+	
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
