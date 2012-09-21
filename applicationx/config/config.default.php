@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://koolyte.local';
+$config['base_url']	= 'http://koolytebeta.auto2kx.com/';
 
 /*
 |--------------------------------------------------------------------------

@@ -1,5 +1,10 @@
-*/config/development
-*/logs/log-*.php
-*/logs/!index.html
-*/cache/*
-*/cache/!index.html
+!/*
+
+# config.php is now out of sync
+/applicationx/config/config.php
+
+# Image crap
+/public/images/Thumb.db
+
+# Mac crap
+.DS_Store

@@ -58,7 +58,7 @@ $db['default']['username'] = 'root';
 $db['default']['password'] = 'sushisakura00';
 $db['default']['database'] = 'hireword_eatsu';*/
 
-$db['default']['hostname'] = "174.121.16.8";
+$db['default']['hostname'] = "174.121.16.2";
 $db['default']['username'] = 'fz2kx_user';
 $db['default']['password'] = 'k1982112k';
 $db['default']['database'] = 'fz2kx_koolyte';
