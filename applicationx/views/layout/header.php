@@ -1,8 +1,4 @@
-<!--<div id="header">
-	<div id="header_inner">
-		Hello world!
-    </div>
-</div>-->
+<input type="hidden" id="base_url" value="<?php echo base_url(); ?>" />
 
 <div class="header1_bg">
   <div class="header1">

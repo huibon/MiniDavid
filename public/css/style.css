@@ -7,7 +7,7 @@ a{ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;color:#333;text-deco
 a:hover{ text-decoration:underline;color: #931818 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-html, body { line-height:1;background:url(../images/site/bgnoise.png); }
+html, body { line-height:1; }
 ol, ul { list-style: none;padding:0px;margin:0px; }
 input{  }
 table { border-collapse:collapse;border-spacing: 0; }
@@ -71,7 +71,7 @@ p{ font-size:13px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;color
 .header1{ height:35px;width:960px;padding:20px 0px;margin:0 auto; }
 .header1_logo{ width:100px;height:35px; }
 .header1_logo a{ line-height:35px;font-size:35px;color:#fff;text-decoration:none;font-weight:bold; }.header1_logo a:hover{ color:#FFC; }
-.header2_bg{ height:50px;min-width:960px;margin:0 auto; }
+.header2_bg{ height:50px;min-width:960px;margin:0 auto;background:url(../images/site/bgnoise.png); }
 .header2{ width:960px;height:50px;margin:0 auto;overflow:hidden; }
 .header_top_menu{ float:left;border-right:1px solid #ccc; }
 .header_top_menu_item{ float:left;height:50px;width:70px; }
@@ -84,15 +84,21 @@ p{ font-size:13px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;color
 .header_top_menu_item:active, .header_top_menu_item_active{ background-position:0px -100px;border-top:5px solid #ccc; }
 
 /* -- slideshow -- */
-.slideshow_bg{ min-width:960px;height:290px;margin:0 auto; }
+.slideshow_bg{ min-width:960px;height:290px;margin:0 auto;background:url(../images/site/bgnoise.png); }
 .slideshow{ width:960px;height:270px;margin:0 auto;background:#eee;overflow:hidden; }
 
 /* -- food -- */
 /* -- food ads -- */
-.site_top_ads_bg{ min-width:960px;height:230px;margin:0 auto; }
-.site_top_ads{ width:960px;height:180px;padding:15px 0px 35px 0px;background:#eee;margin:0 auto; }
+.site_top_ads_bg{ min-width:960px;height:220px;margin:0 auto;background:url(../images/site/bgnoise.png); }
+.site_top_ads{ width:960px;height:170px;padding:15px 0px 35px 0px;margin:0 auto; }
 .site_top_ads_item{ width:228px;height:150px;background:#999;float:left;margin-left:15px;cursor:pointer;overflow:hidden; }
 .site_top_ads_item:first-child{ margin-left:0px; }
+.site_top_ads_hover_shadow{ width:228px;height:150px;background:url(../images/site/site_top_ads_hover_shadow.png) repeat-y;display:none; }
+.site_top_ads_hover_text{ width:228px;height:150px;color:#fff;vertical-align:middle;display:table-cell;text-align:center; }
+
+/* -- food search bar -- */
+.site_search_bar_bg{ min-width:960px;height:45px;background:url(../images/search_nav/search-nav-bg.png) repeat-x; }
+.site_search_bar{ width:960px;height:45px;margin:0px auto; }
 
 /* -- shadow -- */
 .top_down_shadow { -moz-box-shadow: 0px 1px 2px #666;-webkit-box-shadow: 0px 1px 2px #666;box-shadow: 0px 1px 2px #666;
@@ -101,11 +107,11 @@ p{ font-size:13px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;color
 /* For IE 5.5 - 7 */
 filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#666666');
 }
-.center_shadow{ -moz-box-shadow: 0px 0px 1px #666;-webkit-box-shadow: 0px 0px 1px #666;box-shadow: 0px 0px 1px #666;
+.center_shadow{ -moz-box-shadow: 0px 0px 3px #666;-webkit-box-shadow: 0px 0px 3px #666;box-shadow: 0px 0px 3px #666;
 /* For IE 8 */
--ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='#444444')";
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color='#444444')";
 /* For IE 5.5 - 7 */
-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='#444444'); }
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color='#444444'); }
 
 /* round corner */
 .round_corner_3px{ -webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior:url(ie-css3.htc); }
